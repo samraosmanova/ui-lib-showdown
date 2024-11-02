@@ -44,7 +44,7 @@ const ExtendedForm = () => {
     country: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -52,7 +52,7 @@ const ExtendedForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
 
     // Validation logic
@@ -79,7 +79,7 @@ const ExtendedForm = () => {
     <Box p={8} maxWidth="600px" mx="auto">
       <form onSubmit={handleSubmit}>
         <VStack spaceX={4} spaceY={4}>
-          <Field name="username">
+          <Field >
             <Text>Username</Text>
             <Input
               type="text"
@@ -90,7 +90,7 @@ const ExtendedForm = () => {
             />
           </Field>
 
-          <Field name="email">
+          <Field >
             <Text>Email</Text>
             <Input
               type="email"
@@ -101,7 +101,7 @@ const ExtendedForm = () => {
             />
           </Field>
 
-          <Field name="password">
+          <Field >
             <Text>Password</Text>
             <Input
               type="password"
@@ -112,7 +112,7 @@ const ExtendedForm = () => {
             />
           </Field>
 
-          <Field name="phone">
+          <Field >
             <Text>Phone Number</Text>
             <Input
               type="tel"
@@ -123,7 +123,7 @@ const ExtendedForm = () => {
             />
           </Field>
 
-          <Field name="address">
+          <Field >
             <Text>Address</Text>
             <Textarea
               name="address"
@@ -141,8 +141,8 @@ const ExtendedForm = () => {
             </HStack>
           </RadioGroup>
 
-          <Stack direction={{ base: "column", md: "row" }} spacing={4} width="100%">
-            <Field name="country">
+          <Stack direction={{ base: "column", md: "row" }} spaceX={4} width="100%">
+            <Field>
               <Text>Size</Text>
               <Stack gap="5" width="320px">
                 <For each={["xs", "sm", "md", "lg"]}>

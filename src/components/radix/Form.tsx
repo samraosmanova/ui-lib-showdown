@@ -1,5 +1,3 @@
-// App.jsx
-
 import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import * as Slider from "@radix-ui/react-slider";
@@ -10,12 +8,9 @@ import { CheckIcon } from "@radix-ui/react-icons";
 export default function Form() {
   const [volume, setVolume] = useState([50]);
   const [username, setUsername] = useState("");
-  const [selectedOption, setSelectedOption] = useState("option1");
   const [isChecked, setIsChecked] = useState(false);
   const [bio, setBio] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
-  const [selectedColor, setSelectedColor] = useState("#000000");
-  const [file, setFile] = useState(null);
 
   return (
     <div
@@ -75,7 +70,7 @@ export default function Form() {
       >
         <Checkbox.Root
           checked={isChecked}
-          onCheckedChange={(checked) => setIsChecked(true)}
+          onCheckedChange={() => setIsChecked(true)}
           id="terms"
           style={{
             width: 18,

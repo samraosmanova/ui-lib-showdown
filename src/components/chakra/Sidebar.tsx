@@ -2,7 +2,6 @@
 import { Box, VStack,  Text,} from "@chakra-ui/react";
 import { FiClipboard, FiHome } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-import { Switch } from "../ui/switch";
 import { ColorModeButton } from "../ui/color-mode";
 
 const Sidebar = () => {

@@ -3,13 +3,14 @@ import { Box, VStack,  Text,} from "@chakra-ui/react";
 import { FiClipboard, FiHome } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { Switch } from "../ui/switch";
+import { ColorModeButton } from "../ui/color-mode";
 
 const Sidebar = () => {
   const navigate = useNavigate();
   return (
     <Box as="nav" w="250px" p="5"  borderRight="1px solid" borderColor="gray.200" height="100vh">
       <Text fontSize="xl" fontWeight="bold" mb="5">
-        Chakra UI
+        Chakra UI <ColorModeButton/>
       </Text>
       <VStack align="start">
         <div
@@ -32,7 +33,7 @@ const Sidebar = () => {
         </div>
       </VStack>
 
-      <Switch marginTop={4}>Dark</Switch>
+      
     </Box>
   );
 };

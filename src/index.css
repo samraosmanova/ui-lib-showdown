@@ -4,7 +4,7 @@
 
 .root-buttons{
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   align-items: center;
   gap:1rem;
   height: 100vh;

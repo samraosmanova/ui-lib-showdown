@@ -61,7 +61,7 @@ export default function App() {
         width="100%"
         height="100%"
         style={{ border: "none", borderLeft: "1px dashed #5850ec" }}
-        src="https://testapi.betterpayment.de/rest/checkouts/23db5d5d-2d93-466b-8c31-48a645840d76"
+        src="https://testapi.betterpayment.de/rest/checkouts/47a3f5b2-9326-4a4a-b277-64e030c03833"
       />
     </div>
   );

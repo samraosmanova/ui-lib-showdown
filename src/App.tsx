@@ -35,6 +35,10 @@ export default function App() {
           <span style={{ color: "orange" }}>src=</span>
           <span style={{ color: "yellow" }}>"URL_WITH_TOKEN"</span>
           <br />
+          &nbsp;&nbsp;
+          <span style={{ color: "orange" }}>allow=</span>
+          <span style={{ color: "yellow" }}>"payment"</span>
+          <br />
           <span style={{ color: "lightblue" }}>/&gt;</span>
         </pre>
         <p> Embedding payment forms via iFrames can create a seamless user experience by keeping
@@ -61,7 +65,8 @@ export default function App() {
         width="100%"
         height="100%"
         style={{ border: "none", borderLeft: "1px dashed #5850ec" }}
-        src="https://testapi.betterpayment.de/rest/checkouts/47a3f5b2-9326-4a4a-b277-64e030c03833"
+        allow="payment"
+        src="https://devapi.betterpayment.de/rest/checkouts/16e463a3-192a-4261-bb1a-e7be8d4d8102"
       />
     </div>
   );
